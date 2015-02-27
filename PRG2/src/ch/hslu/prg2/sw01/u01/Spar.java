@@ -7,7 +7,7 @@ package ch.hslu.prg2.sw01.u01;
 
 /**
  *
- * @author Lorenz (i)GITTT sldöfksdf
+ * @author Lorenz v15.02.27.01
  */
 public class Spar extends Konto {
 
@@ -40,11 +40,18 @@ public class Spar extends Konto {
     public void print() {
 
         super.print();
-        System.out.println("Ihr Limit beträgt" + maxOut);
+        System.out.println("Ihr Limit beträgt " + maxOut);
     }
 
     public static void main(String[] args) {
-        Spar sparkonto = new Spar(124088, 1.09);
+        Spar spar1 = new Spar();
+        spar1.print();
+        spar1.getSaldo();
+        spar1.print();
+        spar1.payIn(1000.50);
+        spar1.print();
+        spar1.payOut(2000.0);
+        spar1.print();
     }
 
 }
