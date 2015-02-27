@@ -7,7 +7,7 @@ package ch.hslu.prg2.sw01.u01;
 
 /**
  *
- * @author Lorenz (i)GITTT
+ * @author Lorenz (i)GITTT 2.0
  */
 public class Spar extends Konto {
 
