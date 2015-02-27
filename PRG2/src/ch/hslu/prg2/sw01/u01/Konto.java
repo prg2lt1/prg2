@@ -7,7 +7,7 @@ package ch.hslu.prg2.sw01.u01;
 
 /**
  *
- * @author tobias
+ * @author tobias mit änderung GIT
  */
 public class Konto {
 
