@@ -7,7 +7,7 @@ package ch.hslu.prg2.sw01.u01;
 
 /**
  *
- * @author Lorenz (i)GITTT 2.0
+ * @author Lorenz (i)GITTT sldöfksdf
  */
 public class Spar extends Konto {
 
@@ -15,7 +15,7 @@ public class Spar extends Konto {
     private double startRate = 0.015;
     private double startSaldo = 0.0;
 
-    public Spar(startSaldo, startRate){
+    public Spar(double startSaldo, double startRate){
         super(startSaldo, startRate);
         this.maxOut = 20000.0; 
     }
