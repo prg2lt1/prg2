@@ -15,7 +15,12 @@ public class Spar extends Konto {
     private double startRate = 0.015;
     private double startSaldo = 0.0;
 
-    public Spar(startSaldo, startRate){
+    public Spar(){
+        super(0, 1.05);
+        this.maxOut = 20000.0; 
+    }
+
+    public Spar(double startSaldo, double startRate){
         super(startSaldo, startRate);
         this.maxOut = 20000.0; 
     }
@@ -38,8 +43,8 @@ public class Spar extends Konto {
         System.out.println("Ihr Limit beträgt" + maxOut);
     }
 
-    public static void main(String args[]) {
-        Spar sparkonto = new Spar();
+    public static void main(String[] args) {
+        Spar sparkonto = new Spar(124088, 1.09);
     }
 
 }
