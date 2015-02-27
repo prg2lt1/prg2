@@ -78,7 +78,7 @@ public class Bank {
 
         b1.printAccounts();
         b1.printFund();
-        
+
         System.out.println("No. of Accounts: " + b1.noOfAccounts());
 
     }

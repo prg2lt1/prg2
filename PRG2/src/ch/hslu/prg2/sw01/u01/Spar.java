@@ -15,16 +15,16 @@ public class Spar extends Konto {
     private double startRate = 0.015;
     private double startSaldo = 0.0;
 
-    public Spar(){
+    public Spar() {
         super(0, 1.05);
-        this.maxOut = 20000.0; 
+        this.maxOut = 20000.0;
     }
 
-    public Spar(double startSaldo, double startRate){
+    public Spar(double startSaldo, double startRate) {
         super(startSaldo, startRate);
-        this.maxOut = 20000.0; 
+        this.maxOut = 20000.0;
     }
-            
+
     @Override
     public double getSaldo() {
 
