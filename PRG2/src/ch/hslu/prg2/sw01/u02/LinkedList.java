@@ -45,7 +45,7 @@ public class LinkedList<T> {
      * @return
      */
     public boolean isFound(T d) {
-        
+
         ListNode<T> actualNode = head;
 
         while ((actualNode != null) && !d.equals(actualNode.getData())) {
@@ -83,7 +83,7 @@ public class LinkedList<T> {
     public void print() {
         ListNode<T> actualNode = head;
         System.out.println("----------");
-        while(actualNode != null){
+        while (actualNode != null) {
             System.out.println(actualNode.getData());
             actualNode = actualNode.getNext();
         }
