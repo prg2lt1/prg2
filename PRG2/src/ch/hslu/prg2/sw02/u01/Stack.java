@@ -5,38 +5,40 @@
  */
 package ch.hslu.prg2.sw02.u01;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author frowin
  */
-public class Stack {
+public class Stack<T> {
 
-    private int size;
-    private int top = 0;
+    private int minCapacity;
+    private ArrayList<T> stack;
 
-    private Object[] stack;
-
-    public Stack(int s) {
-        size = s;
-        stack = new Object[size];
+    public Stack() {
+        minCapacity = 10;
+        stack = new ArrayList<>(minCapacity);
     }
 
-    public void push(Object o) {
-        stack[top] = o;
-        top++;
+    public void push(T d) {
+        stack.add(d);
     }
 
-    public Object pop() {
-        top--;
-        return stack[top];
+    public T pop() {
+        int lastIndex = stack.lastIndexOf(this);
+        T lastElement = stack.get(lastIndex);
+        stack.remove(lastIndex);
+        stack.trimToSize();
+        return lastElement;
     }
 
     public boolean isEmpty() {
-        return (top == 0);
+        return (stack.lastIndexOf(this) == -1);
     }
 
     public boolean isFull() {
-        return (top == size);
+        return (minCapacity == stack.size());
     }
 
 }
