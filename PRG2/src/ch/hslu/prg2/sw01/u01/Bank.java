@@ -10,7 +10,7 @@ import java.util.Iterator;
 
 /**
  *
- * @author frowin
+ * @author frowin mit GIT
  */
 public class Bank {
 
