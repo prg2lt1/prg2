@@ -17,7 +17,7 @@ public class Konto {
     private double rate;
 
     public Konto() {
-        count = +1;
+        count++;
         no = count;
         saldo = 0.0;
         rate = 0.0;
@@ -26,7 +26,7 @@ public class Konto {
 
     public Konto(double startSaldo, double actualRate) {
 
-        count = +1;
+        count++;
         no = count;
         saldo = startSaldo;
         rate = actualRate;
@@ -34,6 +34,10 @@ public class Konto {
 
     public double getSaldo() {
         return saldo;
+    }
+
+    public void setSaldo(double newSaldo) {
+        this.saldo = newSaldo;
     }
 
     public double getRate() {
@@ -47,14 +51,17 @@ public class Konto {
 
     public void payIn(double amount) {
         if (amount > 0.0) {
-            saldo = +amount;
+            saldo += amount;
         }
 
     }
 
     public void payOut(double amount) {
         if (saldo - amount >= 0.0) {
-            saldo = -amount;
+            saldo -= amount;
+        }
+        else {
+            System.out.println("HEY!");
         }
     }
 
