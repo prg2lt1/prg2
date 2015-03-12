@@ -1,6 +1,5 @@
 // Test mit JUnit fehlt noch, weiss nicht ob diese Klasse funktioniert :-)
 
-// test
 
 /*
  * To change this license header, choose License Headers in Project Properties.
