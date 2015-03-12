@@ -23,7 +23,7 @@ public class StackTest {
 
     @BeforeClass
     public static void setUpClass() {
-
+        Stack stack = new Stack();
     }
 
     @AfterClass
